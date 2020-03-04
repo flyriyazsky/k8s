@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    env: prod
+    dc: us-central
+    cost: central
+  
+spec:
+  containers:
+    - name: webapp
+      image: nginx
+    - name: app
+      image: tomcat:7
